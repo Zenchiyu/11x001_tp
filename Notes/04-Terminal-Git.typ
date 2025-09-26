@@ -21,13 +21,13 @@
 
 #slide(title: "C'est quoi un terminal ?", outlined: true)[
 
-   - #stress("Terminal"): programme (souvent avec interface graphique ou en mode texte) permettant d'interagir avec le système via des #stress("commandes textuelles"). Le terminal affiche l'entrée/sortie, mais il ne comprend pas les commandes lui-même. Les commandes sont transmises au #stress("shell").
+- #stress("Terminal"): programme (souvent avec interface graphique ou en mode texte) permettant d'interagir avec le système via des #stress("commandes textuelles"). Le terminal affiche l'entrée/sortie, mais il ne comprend pas les commandes lui-même. Les commandes sont transmises au #stress("shell").
 
 - #stress("Shell"): programme qui interprète les commandes saisies dans le terminal et demande au système d'exploitation de les exécuter (ex. Bash, Zsh, Fish, PowerShell).
 
 - #stress("Shell scripting language"): langage de programmation associé au shell, permettant d'écrire des scripts (fichiers .sh, .zsh, etc.) avec variables, boucles, conditions, fonction etc. pour automatiser des tâches.
 
-  - #stress("PowerShell"): lorsque vous lancez l'application PowerShell, vous ouvrez une fenêtre de terminal qui exécute le shell PowerShell à l’intérieur. Le terminal est l'interface, et PowerShell est le programme qui interprète vos commandes et permet aussi d’écrire des scripts (langage PowerShell).
+- #stress("PowerShell"): lorsque vous lancez l'application PowerShell, vous ouvrez une fenêtre de terminal qui exécute le shell PowerShell à l’intérieur. Le terminal est l'interface, et PowerShell est le programme qui interprète vos commandes et permet aussi d’écrire des scripts (langage PowerShell).
 
 ]
 
@@ -198,6 +198,17 @@
 
 ]
 
+#slide(title: "Pourquoi on vous fait créer ces clés SSH")[
+
+- Utile pour votre projet GitHub (Semaine 4) afin d'éviter les "access tokens" remplaçant les
+mots de passe lors de la mise à jour de votre dépôt hébergé sur GitHub.
+
+- Utile pour se connecter à distance sur une machine avec la commande `ssh` sans taper un mot de passe à chaque fois
+
+- Durant votre cursus, vous aurez normalement un accès à distance au cluster de l'Université
+  pour lancer vos calculs sur plusieurs machines en parallèle.
+
+]
 
 #title-slide[
  Semaine 4 - Votre projet Git
