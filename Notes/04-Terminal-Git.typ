@@ -149,7 +149,32 @@
 ]
 
 #title-slide[
- Semaine 3 - Clés ssh et GitHub
+ Semaine 3 - Votre projet Git
+]
+
+#slide(title: "Votre projet Git (local)")[
+- Nous allons vous montrer les prochain(e)s outils et commandes en direct:
+
+    - `git init`
+    - `git status`
+    - `git add`
+    - `git commit`
+    - `git diff`
+    - `git log`
+
+- Jusqu'à là, votre projet n'est pas encore sur GitHub ! Voir Semaine 4 et 5.
+]
+
+#title-slide[
+ Semaine 4 - GitHub et clés SSH
+]
+
+#slide(title: "Création d'un dépôt/projet GitHub")[
+
+Nous allons vous montrer comment créer un dépôt/projet GitHub depuis GitHub.
+
+Cependant, git clone avec SSH requiert la création de clés privés et publiques SSH (voir prochaines slides)
+
 ]
 
 #slide(title: "Concept de clés privés et publiques en cryptographie")[
@@ -165,7 +190,7 @@
 
 - Dans le cas de GitHub, on peut s'authentifier soit à travers HTTPs, soit à travers SSH.
 - A travers HTTPs, cela vous demanderai de rentrer votre nom d'utilisateur et un mot de passe (#link("https://github.blog/security/application-security/token-authentication-requirements-for-git-operations/")[L'access token remplace votre mot de passe de nos jours]).
-- A la place, on vous fera passer à travers SSH pour votre projet Git (Semaine 4).
+- A la place, on vous fera passer à travers SSH pour votre projet GitHub.
     
     - Cela demande la création d'une paire de clés et de donner à GitHub votre clé publique
     - Une fois que c'est bon, vous n'aurez plus besoin de rentrer un mot de passe.
@@ -198,38 +223,26 @@
 
 ]
 
-#slide(title: "Pourquoi on vous fait créer ces clés SSH")[
+#slide(title: "Création d'un dépôt/projet GitHub")[
+- Nous allons désormais vous montrer les prochain(e)s outils et commandes en direct:
 
-- Utile pour votre projet GitHub (Semaine 4) afin d'éviter les "access tokens" remplaçant les
+    - Création d'un dépôt/projet GitHub depuis GitHub et git clone avec SSH
+    - Composition minimale: `README.md` et `LICENSE` (#link("https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository")[explication])
+
+]
+
+#slide(title: "Pourquoi on vous a fait créer ces clés SSH")[
+
+- Utile pour votre projet GitHub afin d'éviter les "access tokens" remplaçant les
 mots de passe lors de la mise à jour de votre dépôt hébergé sur GitHub.
 
 - Utile pour se connecter à distance sur une machine avec la commande `ssh` sans taper un mot de passe à chaque fois
 
 - Durant votre cursus, vous aurez normalement un accès à distance au cluster de l'Université
   pour lancer vos calculs sur plusieurs machines en parallèle.
-
 ]
 
-#title-slide[
- Semaine 4 - Votre projet Git
-]
 
-#slide(title: "Votre projet Git")[
-- Nous allons vous montrer les prochain(e)s outils et commandes en direct:
-
-    - Création d'un dépôt/projet GitHub
-    - Composition minimale: `README.md` et `LICENSE` (#link("https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository")[explication])
-    - Fichier gitignore et pourquoi le "." devant
-    - `git init`
-    - `git status`
-    - `git add`
-    - `git commit`
-    - `git diff`
-    - `git log`
-    - `git clone` mais avec SSH.
-
-- Jusqu'à là, votre projet n'est pas mis à jour sur GitHub ! Voir Semaine 5.
-]
 
 #title-slide[
  Semaine 5 - Branches, git push et pull
@@ -254,11 +267,12 @@ mots de passe lors de la mise à jour de votre dépôt hébergé sur GitHub.
 
 Si vous le souhaitez, vous pouvez lire plus sur Git et GitHub.
 
-Voici quelques liens intéressants de concepts dont certains n'ont pas été expliqué:
+Voici quelques liens ou noms intéressants de concepts dont certains n'ont pas été expliqué:
     - #link("https://youtu.be/hwP7WQkmECE")[Explication de Git par Fireship]
 
     - `git stash` (l'#link("https://www.w3schools.com/git/git_stash.asp?remote=github")[explication de git stash ainsi que d'autres commandes])
     - `git rebase` (l'#link("https://www.atlassian.com/git/tutorials/merging-vs-rebasing")[explication de merge vs rebase])
+    - Fichier gitignore et pourquoi le "." devant
 
 ]
 
