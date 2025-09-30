@@ -275,4 +275,98 @@ Par exemple, si on a un texte / une séquence de mots: "The quick brown fox jump
     - `target_sequence` commence à "quick" et se termine à "\<END\>"
 
 Le modèle serait entrainé sur ces données pré-traitées de sorte à prédire "quick" à partir de "The", "fox" à partir de "The" et "quick", etc.
+ 
+## Exercice 8 - Fonctions et récursif vs itératif
 
+### Définir une fonction
+
+Une *fonction* en programmation est un concept similaire à celui en mathématiques. Une fonction peut donc prendre une à plusieurs valeurs/variables/*arguments* en entrée et produire une sortie (cela peut être une structure de donnée comme par exemple une liste, un tuple ou un dictionnaire. Vous verrez ces deux derniers types plus tard).
+
+En Python, on commence à définir une fonction par sa *signature* / *en-tête* en utilisant le mot clé `def`. Il faut ensuite utiliser des *indentations* pour le contenu/corps de la fonction. Par exemple, on peut définir la fonction `square` comme ceci:
+
+```python
+def square(x):  # def est le mot-clé, square est le nom de ma fonction et x est un argument
+    return x**2 # return nous indique ce que la fonction va renvoyer en sortie
+# Attention: En Python, c'est x**2 et non x^2. Par contre, en C, x**2 n'existe pas.
+```
+
+et voici une fonction `add`:
+
+```python
+def add(x, y):
+    print(f"Je vais additionne {x} et {y}")
+    return x + y    # Attention il n'y a pas d'erreur si vous voulez utiliser cette fonction avec des chaines de caractères.
+```
+
+mais une fonction n'a pas besoin de "retourner une valeur"
+
+```python
+def affiche(ma_variable):
+    print(ma_variable)
+```
+
+(En réalité, cela retourne bien une valeur mais c'est de type `None`. Vous pouvez le vérifier en utilisant la fonction `type`)
+
+et une fonction n'a pas besoin non plus d'avoir un argument:
+
+```python
+def bonjour():
+    print("Bonjour")
+```
+
+Vous avez donc écrit vos exercices dans des fonctions ! Attention, n'écrivez pas `nom_fct(arguments) = quelquechose` dans votre `return` !
+
+**TODO** :
+
+- Définissez une fonction appelée `somme_liste` prenant comme argument une liste
+que vous appeleriez `liste`. Ecrivez votre fonction en dehors de la fonction `exercice8`
+
+- Dans le corps de la fonction, écrivez ceci:
+
+```python
+if len(liste) == 1:
+    return liste[0]
+
+return liste[0] + somme_liste(liste[1:])    
+```
+
+- Réfléchissez à ce que ce code pourrait faire.
+- Réfléchissez à/aux erreur(s) qui peut/peuvent se produire si l'on ne vérifie pas ce que rentre l'utilisateur.
+
+
+### Utiliser la fonction (Appel de fonction)
+
+Pour utiliser/*appeler* la fonction, vous devez écrire le nom de la fonction suivi des variables ou entrées/valeurs requises.
+
+Exemple:
+
+```python
+print("5^2:", square(5))
+print("7 + 3:", add(7, 3))
+```
+
+A l'appel de la fonction, les lignes se trouvant dans le corps de la fonction sont exécutés. Au premier return exécuté, cela vous fera revenir vers la ligne du *dernier appel*.
+
+**TODO** :
+
+- Lancez/appelez la fonction que vous venez de définir depuis le corps de la fonction `exercice8` avec comme argument la liste `[1, 2, 3, 4]`
+- Utilisez le debugger ou des prints pour voir ce qu'il s'est passé.
+
+Nous allons revenir sur cela dans la prochaine séance d'exercice avec le debugger et "Step in"
+
+
+### Itératif vs Récursif
+
+Jusqu'à maintenant, vous avez vu des codes avec des boucles `while` et des boucles `for`. Ce sont des exemples de codes itératifs.
+
+Cependant, vous pouvez aussi faire répéter des opérations en appelant une fonction à partir d'un appel de fonction. Cette fonction s'appelle donc une fonction *récursive*. Vous pouvez donc vous imaginer qu'il faut un moyen d'arrêter ces appels: c'est la *condition d'arrêt/cas de base*.
+
+Exemple venant du code précédent:
+```python
+if len(liste) == 1: # cas de base pour arrêter la récursion
+    return liste[0] # plusieurs returns sont possible dans le corps de la fonction
+else:
+    return liste[0] + somme_liste(liste[1:])    # la liste diminue en taille, on a un appel récursif ici
+```
+
+La fonction que vous avez écrit est donc une fonction *récursive*

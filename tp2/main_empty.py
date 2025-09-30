@@ -48,6 +48,12 @@ def exercice7():
 
     # ******************** Votre code ci-dessus *********************
 
+@exercice
+def exercice8():
+    # ******************** Votre code ci-dessous ********************
+
+    # ******************** Votre code ci-dessus *********************
+
 if __name__ == "__main__":
     # Astuce : commenter tous les exercices sauf celui en cours pour gagner du temps !
     exercice1()
