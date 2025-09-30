@@ -316,6 +316,15 @@ def bonjour():
 
 Vous avez donc écrit vos exercices dans des fonctions ! Attention, n'écrivez pas `nom_fct(arguments) = quelquechose` dans votre `return` !
 
+Le `print` est aussi une fonction, mais déjà prédéfinie. Vous pouvez aussi importer des fonctions d'autres librairies pour par exemple:
+
+- Lire des fichiers ou écrire dans des fichiers
+- Affichez des images
+- Utiliser des modèles d'IA
+- etc.
+
+Donc pas besoin de re-créer la roue en pratique.
+
 **TODO** :
 
 - Définissez une fonction appelée `somme_liste` prenant comme argument une liste
