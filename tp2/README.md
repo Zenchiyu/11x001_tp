@@ -361,12 +361,16 @@ Jusqu'à maintenant, vous avez vu des codes avec des boucles `while` et des bouc
 
 Cependant, vous pouvez aussi faire répéter des opérations en appelant une fonction à partir d'un appel de fonction. Cette fonction s'appelle donc une fonction *récursive*. Vous pouvez donc vous imaginer qu'il faut un moyen d'arrêter ces appels: c'est la *condition d'arrêt/cas de base*.
 
-Exemple venant du code précédent:
+Exemple (corps de la fonction) venant du code précédent:
 ```python
 if len(liste) == 1: # cas de base pour arrêter la récursion
     return liste[0] # plusieurs returns sont possible dans le corps de la fonction
-else:
-    return liste[0] + somme_liste(liste[1:])    # la liste diminue en taille, on a un appel récursif ici
+
+return liste[0] + somme_liste(liste[1:])    # la liste diminue en taille, on a un appel récursif ici
 ```
 
-La fonction que vous avez écrit est donc une fonction *récursive*
+La fonction que vous avez écrit plus tôt est donc une fonction *récursive*.
+
+**Remarque(s)**: 
+
+- On aurait aussi pu utiliser un `else` mais on n'en a pas besoin car il y a un return dans le `if`.
