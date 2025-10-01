@@ -15,9 +15,9 @@ def exercice1():
 @exercice
 def exercice2():
     # ******************** Votre code ci-dessous ********************
-    print("Nom     : Michel LAMBDA\n");
-    print("Né le   : 31.10.2001\n");
-    print("Contact : michel.lambda@unige.ch\n");
+    print("Nom     : Michel LAMBDA\n")
+    print("Né le   : 31.10.2001\n")
+    print("Contact : michel.lambda@unige.ch\n")
     # ******************** Votre code ci-dessus *********************
 
 @exercice
