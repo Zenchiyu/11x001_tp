@@ -26,7 +26,7 @@ Ce TP est optionnel et contient donc plus d'exercices afin de renforcer vos conn
 
 **TODO** : Lire un entier relatif et afficher s'il est strictement négatif, nul ou strictement positif.
 
-**Rappel** : `input` retourne et le type `int` correspond à des entiers relatifs.
+**Rappel** : `input` retourne un `str` et le type `int` correspond à des entiers relatifs.
 
 **Remarque** : Une variable, étant stockée en mémoire, a généralement des contraintes sur combien de bits ou octets (bytes en anglais)
 elle prend en espace. Il y a donc généralement un nombre fini de valeurs possibles que peut prendre une variable ayant un certain type. Cependant, c'est un peu compliqué pour Python et cela dépend aussi de quelle version vous utilisez ([explication optionelle](https://www.datacamp.com/tutorial/everything-you-need-to-know-about-pythons-maximum-integer-value)). Cela sera plus clair en C.
