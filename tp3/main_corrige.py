@@ -25,16 +25,6 @@ def exercice2():
     ma_liste = [4, 3, 7, 10, 42, 1]
     # ******************** Votre code ci-dessous ********************
     maxi = -10_000  # Pour rappel _ dans ce cas n'est là que pour aider à la lecture du nombre
-    # Version avec while:
-    i = 0
-    while i < len(ma_liste):
-        if ma_liste[i] > maxi:
-            maxi = nombre
-        i += 1
-    print(f"Maximum de {ma_liste}: {maxi}")
-
-    # Version avec for:
-    maxi = -10_000
     for nombre in ma_liste: # Parcourt la liste
         if nombre > maxi:   # Si on trouve plus grand, c'est notre plus grand
             maxi = nombre
@@ -47,16 +37,6 @@ def exercice3():
     ma_liste = [4, 3, 7, 10, 42, 1]
     # ******************** Votre code ci-dessous ********************
     mini = 10_000  # Pour rappel _ dans ce cas n'est là que pour aider à la lecture du nombre
-    # Version avec while:
-    i = 0
-    while i < len(ma_liste):
-        if ma_liste[i] < mini:
-            mini = nombre
-        i += 1
-    print(f"Minimum de {ma_liste}: {mini}")
-
-    # Version avec for:
-    mini = 10_000
     for nombre in ma_liste:
         if nombre < mini:   # Si on trouve plus petit, c'est notre plus petit
             mini = nombre
@@ -101,6 +81,29 @@ def exercice4():
             print(espaces_gauche + "*" + espaces_droite + "*")
 
     # ******************** Votre code ci-dessus *********************
+
+@exercice
+def exercice4_v2():
+    # ******************** Votre code ci-dessous ********************
+    hauteur = int(input("Donnez la hauteur du losange: "))
+
+    n = hauteur // 2 + 1
+    cote = [["*" if i==j else " " for i in range(n)] for j in range(n)]
+    cote_reverse = cote[::-1]
+    half = [cote_reverse[i] + cote[i][1:] for i in range(n)]
+
+    half_reverse = half[::-1]
+    full = half + half_reverse[1:]
+
+    full_str = ""
+    for line in full:
+        for char in line:
+            full_str += char
+        full_str += "\n"
+
+    print(full_str)
+    # ******************** Votre code ci-dessus *********************
+
 
 def fibo_iteratif(n):   # fonction à un seul argument
     # TODO n° 2 de l'ex 5:
@@ -294,14 +297,15 @@ def exercice11():
     
 if __name__ == "__main__":
     # Astuce : commenter tous les exercices sauf celui en cours pour gagner du temps !
-    exercice1()
-    exercice2()
-    exercice3()
+    # exercice1()
+    # exercice2()
+    # exercice3()
     exercice4()
-    exercice5()
-    exercice6()
-    exercice7()
-    exercice8()
-    exercice9()
-    exercice10()
-    exercice11()
+    exercice4_v2()
+    # exercice5()
+    # exercice6()
+    # exercice7()
+    # exercice8()
+    # exercice9()
+    # exercice10()
+    # exercice11()
