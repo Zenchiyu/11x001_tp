@@ -25,6 +25,16 @@ def exercice2():
     ma_liste = [4, 3, 7, 10, 42, 1]
     # ******************** Votre code ci-dessous ********************
     maxi = -10_000  # Pour rappel _ dans ce cas n'est là que pour aider à la lecture du nombre
+    # Version avec while:
+    i = 0
+    while i < len(ma_liste):
+        if ma_liste[i] > maxi:
+            maxi = nombre
+        i += 1
+    print(f"Maximum de {ma_liste}: {maxi}")
+
+    # Version avec for:
+    maxi = -10_000
     for nombre in ma_liste: # Parcourt la liste
         if nombre > maxi:   # Si on trouve plus grand, c'est notre plus grand
             maxi = nombre
@@ -37,6 +47,16 @@ def exercice3():
     ma_liste = [4, 3, 7, 10, 42, 1]
     # ******************** Votre code ci-dessous ********************
     mini = 10_000  # Pour rappel _ dans ce cas n'est là que pour aider à la lecture du nombre
+    # Version avec while:
+    i = 0
+    while i < len(ma_liste):
+        if ma_liste[i] < mini:
+            mini = nombre
+        i += 1
+    print(f"Minimum de {ma_liste}: {mini}")
+
+    # Version avec for:
+    mini = 10_000
     for nombre in ma_liste:
         if nombre < mini:   # Si on trouve plus petit, c'est notre plus petit
             mini = nombre
