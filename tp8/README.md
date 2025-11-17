@@ -188,7 +188,7 @@ Ce phénomène s'appelle un **integer overflow** : quand un nombre est trop gran
 
 ### Mise en pratique
 
-- **TODO**: Observer / comprendre / jouer avec le code fourni dans la fonction `exercice9`. 
+- **TODO**: Observer / comprendre / jouer avec le code fourni dans la fonction `exercice8`. 
 
 **Remarque** : On utilise le type `unsigned char` car il permet de stocker des nombres entiers sur 8 bits, comme dans l'explication précédente.
 
