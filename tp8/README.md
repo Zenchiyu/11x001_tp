@@ -113,7 +113,7 @@ int main(void) {
 }
 ```
 
-**TODO**: Ecrivez une fonction `square` qui prend un int et retourne un int qui est son carré. Testez votre fonction en appelant votre fonction avec `5`, depuis le corps de la fonction exercice5.
+**TODO**: Ecrivez une fonction `square` qui prend un int et retourne un int qui est son carré. Testez votre fonction en l'appelant avec `5`, depuis le corps de la fonction exercice5.
 
 **Remarque(s)**:
 - `**` ne marche pas ici comme en Python.
@@ -136,7 +136,7 @@ affiche $1$.
 
 **TODO**: Comparer ce résultat avec ce que donnerait un code Python qui affiche `3 < 4 < 2`.
 
-## Exercice 8 (Optionnel)
+## Exercice 8
 
 Le but de cet exercice est de comprendre la représentation en mémoire d'un nombre entier et d'illustrer la limitation dite de *dépassement d'entier*, ou **integer overflow** en anglais.
 
@@ -188,7 +188,7 @@ Ce phénomène s'appelle un **integer overflow** : quand un nombre est trop gran
 
 ### Mise en pratique
 
-- **TODO**: Observer / comprendre / jouer avec le code fourni dans la fonction `exercice9`. 
+- **TODO**: Observer / comprendre / jouer avec le code fourni dans la fonction `exercice8`. 
 
 **Remarque** : On utilise le type `unsigned char` car il permet de stocker des nombres entiers sur 8 bits, comme dans l'explication précédente.
 
