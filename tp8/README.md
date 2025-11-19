@@ -113,14 +113,14 @@ int main(void) {
 }
 ```
 
-**TODO**: Ecrivez une fonction `square` qui prend un int et retourne un int qui est son carré. Testez votre fonction avec `5`.
+**TODO**: Ecrivez une fonction `square` qui prend un int et retourne un int qui est son carré. Testez votre fonction en appelant votre fonction avec `5`, depuis le corps de la fonction exercice5.
 
 **Remarque(s)**:
 - `**` ne marche pas ici comme en Python.
 
 ## Exercice 6
 
-**TODO**: Testez votre fonction avec `3.0`, `3.14` puis `hello`.
+**TODO**: Testez votre fonction avec `3.0`, `3.14` puis `hello`. Pour cela, appelez votre fonction depuis le corps de la fonction exercice6.
 
 **Remarque(s)**:
 - Python est plus laxiste.
